@@ -3,12 +3,12 @@ public class Contrato {
     private Cliente cliente;
 
     public Contrato(FabricaAbstrata fabrica) {
-        this.residencia = fabrica.createAluguel();
+        this.residencia = fabrica.createResidencia();
         this.cliente = fabrica.createCliente();
     }
 
-    public String emitirAluguel(){
-        return this.residencia.emitirAluguel();
+    public String emitirResidencia(){
+        return this.residencia.emitirResidencia();
     }
 
     public String emitirCliente(){

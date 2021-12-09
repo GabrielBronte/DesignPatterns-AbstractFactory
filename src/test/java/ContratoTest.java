@@ -6,7 +6,7 @@ class ContratoTest {
     void retornaPessoaFisicaCasa() {
         FabricaAbstrata fabrica = new FabricaContratoPFCasa();
         Contrato contrato = new Contrato(fabrica);
-        assertEquals("Casa",contrato.emitirAluguel());
+        assertEquals("Casa",contrato.emitirResidencia());
         assertEquals("Pessoa Fisica",contrato.emitirCliente());
     }
 
@@ -14,7 +14,7 @@ class ContratoTest {
     void retornaPessoaJuridicaCasa() {
         FabricaAbstrata fabrica = new FabricaContratoPJCasa();
         Contrato contrato = new Contrato(fabrica);
-        assertEquals("Casa",contrato.emitirAluguel());
+        assertEquals("Casa",contrato.emitirResidencia());
         assertEquals("Pessoa Juridica",contrato.emitirCliente());
     }
 
@@ -22,7 +22,7 @@ class ContratoTest {
     void retornaPessoaJuridicaCondominio() {
         FabricaAbstrata fabrica = new FabricaContratoPJCondominio();
         Contrato contrato = new Contrato(fabrica);
-        assertEquals("Condominio",contrato.emitirAluguel());
+        assertEquals("Condominio",contrato.emitirResidencia());
         assertEquals("Pessoa Juridica",contrato.emitirCliente());
     }
 
@@ -30,7 +30,7 @@ class ContratoTest {
     void retornaPessoaFisicaCondominio() {
         FabricaAbstrata fabrica = new FabricaContratoPFCondominio();
         Contrato contrato = new Contrato(fabrica);
-        assertEquals("Condominio",contrato.emitirAluguel());
+        assertEquals("Condominio",contrato.emitirResidencia());
         assertEquals("Pessoa Fisica",contrato.emitirCliente());
     }
 }

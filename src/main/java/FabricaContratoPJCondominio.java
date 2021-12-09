@@ -1,6 +1,6 @@
 public class FabricaContratoPJCondominio implements FabricaAbstrata{
     @Override
-    public Residencia createAluguel() {
+    public Residencia createResidencia() {
         return new ResidenciaCondominio();
     }
 

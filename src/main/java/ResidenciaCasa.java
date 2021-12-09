@@ -1,6 +1,6 @@
 public class ResidenciaCasa implements Residencia {
     @Override
-    public String emitirAluguel() {
+    public String emitirResidencia() {
         return "Casa";
     }
 

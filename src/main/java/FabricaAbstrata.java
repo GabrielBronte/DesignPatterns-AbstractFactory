@@ -1,4 +1,4 @@
 public interface FabricaAbstrata {
-    Residencia createAluguel();
+    Residencia createResidencia();
     Cliente createCliente();
 }
