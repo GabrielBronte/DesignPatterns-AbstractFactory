@@ -1,4 +1,4 @@
-public class Condominio implements Aluguel{
+public class ResidenciaCondominio implements Residencia {
 
     @Override
     public String emitirAluguel() {

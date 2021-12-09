@@ -1,14 +1,14 @@
 public class Contrato {
-    private Aluguel aluguel;
+    private Residencia residencia;
     private Cliente cliente;
 
     public Contrato(FabricaAbstrata fabrica) {
-        this.aluguel = fabrica.createAluguel();
+        this.residencia = fabrica.createAluguel();
         this.cliente = fabrica.createCliente();
     }
 
     public String emitirAluguel(){
-        return this.aluguel.emitirAluguel();
+        return this.residencia.emitirAluguel();
     }
 
     public String emitirCliente(){

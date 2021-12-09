@@ -25,7 +25,7 @@ class ContratoTest {
         assertEquals("Condominio",contrato.emitirAluguel());
         assertEquals("Pessoa Juridica",contrato.emitirCliente());
     }
-    
+
     @org.junit.jupiter.api.Test
     void retornaPessoaFisicaCondominio() {
         FabricaAbstrata fabrica = new FabricaContratoPFCondominio();

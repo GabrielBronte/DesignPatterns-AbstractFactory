@@ -1,11 +1,11 @@
 public class FabricaContratoPFCasa implements FabricaAbstrata{
     @Override
-    public Aluguel createAluguel() {
-        return new Casa();
+    public Residencia createAluguel() {
+        return new ResidenciaCasa();
     }
 
     @Override
     public Cliente createCliente() {
-        return new PessoaFisica();
+        return new ClientePessoaFisica();
     }
 }

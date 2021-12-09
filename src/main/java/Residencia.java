@@ -1,3 +1,3 @@
-public interface Aluguel {
+public interface Residencia {
     String emitirAluguel();
 }
